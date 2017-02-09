@@ -1,0 +1,26 @@
+body,h2,p,div,figure,figcaption,img{margin:0;padding:0;}
+figure{overflow: hidden;float:left;height:800px;position:relative;}
+figcaption{position:absolute;top:0;left:0;color:#888}
+figcaption p,h2,div,span{transition:all 0.35s}
+img{opacity:0.8}
+
+
+@media screen and (max-width:800px){
+    figure{width:100%}
+}
+
+@media screen and (min-width:801px) and (max-width: 1800px){
+    figure{width:50%}
+}
+
+@media screen and (min-width:1801px){
+    figure{width:33.33%}
+}
+
+.test1{background-color: #ffdc66}
+.test1 figcaption{margin:10%}
+.test1 img{transform:translate(0,0)}
+.test1 figcaption p{background:#b9e0ed;margin-top: 10px}
+.test1 figcaption p{transform:translate(-400px,0)}
+.test1:hover figcaption p{transform:translate(0,0)}
+.test1:hover img{transform:translate(-20,0);opacity: 0.5;}
